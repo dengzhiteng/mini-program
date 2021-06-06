@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "moment": "^2.29.1"
+  },
+  "dependencies": {
+    "@dcloudio/uni-ui": "^1.2.12"
+  }
+}

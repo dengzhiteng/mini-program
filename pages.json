@@ -1,0 +1,115 @@
+{
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			// uni-ui 规则如下配置
+			"^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+		}
+	},
+
+	"condition": {
+		"current": 0,
+		"list": [{
+			"name": "index", //模式名称
+			"path": "pages/index/index", //启动页面，必选
+			"query": "interval=4000&autoplay=false" //启动参数，在页面的onLoad函数里面得到。
+		}]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "懂你找图",
+		"navigationBarBackgroundColor": "#000000",
+		"backgroundColor": "#F8F8F8"
+	},
+	"pages": [
+		{
+			"path": "pages/video/index",
+			"style": {
+				"navigationBarTitleText": "精美视频"
+			}
+		},
+		{
+			"path": "pages/home/index"
+		},
+		{
+			"path": "pages/horizontal/index",
+			"style": {
+				"navigationBarTitleText": "横屏"
+			}
+		},
+		{
+			"path": "pages/search/index",
+			"style": {
+				"navigationBarTitleText": "搜索"
+			}
+		},
+		{
+			"path": "pages/mine/index",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		},
+		{
+			"path": "pages/album/index",
+			"style": {
+				"navigationBarTitleText": "专辑详情",
+				"enablePullDownRefresh": false
+			}
+		}
+	    ,{
+            "path" : "pages/imageDetails/index",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "图片详情",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/imgCategory/index",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "分类详情",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#3cc51f",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/home/index",
+				"text": "首页",
+				"iconPath": "./static/icon/_home.png",
+				"selectedIconPath": "./static/icon/home.png"
+			},
+			{
+				"pagePath": "pages/horizontal/index",
+				"text": "横屏",
+				"iconPath": "./static/icon/_img.png",
+				"selectedIconPath": "./static/icon/img.png"
+			},
+			{
+				"pagePath": "pages/video/index",
+				"text": "精美视频",
+				"iconPath": "./static/icon/_videocamera.png",
+				"selectedIconPath": "./static/icon/videocamera.png"
+			},
+			{
+				"pagePath": "pages/search/index",
+				"text": "搜索",
+				"iconPath": "./static/icon/_search.png",
+				"selectedIconPath": "./static/icon/search.png"
+			},
+			{
+				"pagePath": "pages/mine/index",
+				"text": "我的",
+				"iconPath": "./static/icon/_my.png",
+				"selectedIconPath": "./static/icon/my.png"
+			}
+		]
+	}
+}
