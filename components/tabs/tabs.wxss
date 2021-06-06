@@ -1,0 +1,17 @@
+
+
+.tabs_content {
+  display: flex;
+}
+.tabs_content .tabs_content_item {
+  flex: 1;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid #dcdcdc;
+}
+.tabs_content .tabs_content_item.active {
+  border-bottom-color: var(--themeColor);
+}
+

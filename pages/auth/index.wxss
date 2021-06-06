@@ -1,0 +1,7 @@
+/* pages/auth/index.wxss */
+.auth .getuserinfo{
+  display: block;
+  width: 300rpx;
+  line-height: 90rpx;
+  margin:100rpx auto;
+}

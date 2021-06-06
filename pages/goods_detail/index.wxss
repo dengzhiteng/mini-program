@@ -1,0 +1,96 @@
+.goods_detail {
+  padding: 10rpx 20rpx 120rpx;
+  background-color: #fff;
+}
+
+.goods_detail swiper {
+  text-align: center;
+}
+
+.goods_info_warp {
+  padding: 20rpx 5rpx;
+}
+
+.goods_info_warp .goods_price {
+  color: var(--themeColor);
+  font-size: 40rpx;
+  font-weight: bold;
+}
+
+.goods_info_warp .goods_info {
+  display: flex;
+  border-bottom: 12rpx solid var(--borderColor);
+  padding: 6rpx 0;
+}
+
+.goods_info_warp .goods_info .goods_name {
+  flex: 5;
+  color: var(--titleColor);
+  line-height: 1.8;
+}
+
+.goods_info_warp .goods_info .collect {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-left: 1px solid var(--borderColor);
+}
+
+.goods_introduce_title {
+  color: var(--themeColor);
+  font-size: 42rpx;
+  font-weight: bold;
+  padding: 30rpx 0rpx;
+}
+
+.btm_tool {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 90rpx;
+  background-color: #fff;
+  border-top: 1px solid var(--borderColor);
+  display: flex;
+}
+
+.btm_tool .tool_item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--textColot);
+  position: relative;
+}
+
+.btm_tool .tool_item button {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.btm_tool .tool_item .iconfont {
+  color: var(--iconfontColor);
+}
+
+.btm_tool .contact,
+.btm_tool .addCart,
+.btm_tool .buy_now {
+  flex: 2;
+}
+
+.btm_tool .addCart {
+  background-color: #fba500;
+  color: #fff;
+}
+
+.btm_tool .buy_now {
+  background-color: var(--themeColor);
+  color: #fff;
+}

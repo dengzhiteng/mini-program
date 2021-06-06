@@ -1,0 +1,54 @@
+.goods_search {
+  background-color: #ccc;
+  min-height: 100vh;
+  padding-top: 20rpx;
+}
+
+.goods_search_content {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.goods_search .key_words {
+  display: flex;
+  justify-content: space-around;
+}
+
+.goods_search .key_words .key_words_input {
+  flex: 4;
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+  padding: 0 10rpx;
+  color: #333;
+  background-color: #ffff;
+  height: 33px;
+}
+
+.goods_search .key_words .key_words_input input {
+  height: 100%;
+}
+
+.goods_search .key_words .key_words_btn {
+  flex: 1;
+  text-align: end;
+}
+
+.goods_search .key_words .key_words_btn button {
+  line-height: 66rpx;
+}
+
+.goods_search_result {
+  height: 90vh;
+  margin-top: 20rpx;
+}
+
+.goods_search_result .goods_search_result_item {
+  line-height: 60rpx;
+  height: 60rpx;
+  padding: 0 20rpx;
+  border-bottom: 1px solid #dcdcdc;
+  background-color: #ffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

@@ -1,0 +1,20 @@
+<view class="order">
+  <tabs tabs="{{tabs}}" bind:handleTapTab="handleTapTab" currentIndex="{{currentIndex}}">
+    <view class="order_list_content">
+      <view class="order_list_content_item">
+        <view class="order_list_content_item_cell">
+          <text>订单编号</text>
+          <text class="order_list_content_order_num">123123123</text>
+        </view>
+        <view class="order_list_content_item_cell">
+          <text>订单价格</text>
+          <text class="order_list_content_order_price">￥123123123</text>
+        </view>
+        <view class="order_list_content_item_cell">
+          <text>订单日期</text>
+          <text class="order_list_content_order_date">2020-02-02</text>
+        </view>
+      </view>
+    </view>
+  </tabs>
+</view>

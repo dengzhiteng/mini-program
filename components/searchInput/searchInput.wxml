@@ -1,0 +1,6 @@
+<view class="searchInput">
+  <slot name="before"></slot>
+  <navigator hover-class="none" url="/pages/search/index">搜索</navigator>
+  <slot name="after"></slot>
+</view>
+

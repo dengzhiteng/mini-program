@@ -1,0 +1,3 @@
+<view class="auth">
+  <button type="default"  size ="mini" open-type="getUserInfo" bindgetuserinfo="handleGetUserInfo"  class="getuserinfo">  授权登录  </button>
+</view>

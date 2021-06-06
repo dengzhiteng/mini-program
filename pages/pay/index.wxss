@@ -1,0 +1,98 @@
+.cart {
+  padding: 10rpx;
+  height: 90vh;
+  overflow: auto;
+}
+.receiveAddress {
+  padding: 10rpx;
+  border-bottom: 1px solid var(--borderColor);
+}
+.receiveAddress .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart .goodListTitle {
+  font-size: 40rpx;
+  font-weight: bold;
+  border-top: 1px solid var(--borderColor);
+  border-bottom: 1px solid var(--borderColor);
+  padding: 20rpx 0;
+}
+
+.cart .goodList .goodListItem {
+  display: flex;
+  border-bottom: 1px solid var(--borderColor);
+}
+
+.cart .goodList .goodListItem .image {
+  flex: 2;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart .goodList .goodListItem .image image {
+  width: 80%;
+}
+
+.cart .goodList .goodListItem .info {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.cart .goodList .goodListItem .info .goods_name {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.cart .goodList .goodListItem .info .btm_tool {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart .goodList .goodListItem .info .btm_tool .goods_price {
+  color: var(--themeColor);
+  font-size: 28rpx;
+}
+
+
+.cart .btm_account {
+  position: fixed;
+  width: 100%;
+  height: 90rpx;
+  left: 0;
+  bottom: 0;
+  border-top: 1px solid var(--borderColor);
+  border-bottom: 1px solid var(--borderColor);
+  background-color: #fff;
+  display: flex;
+}
+
+.cart .btm_account .info {
+  flex: 4;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-right: 10rpx;
+}
+
+.cart .btm_account .account_pay {
+  background-color: var(--themeColor);
+  flex: 3;
+  color: #fff;
+  font-size: 32rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart .btm_account .info .totalPrice {
+  color: var(--themeColor);
+}

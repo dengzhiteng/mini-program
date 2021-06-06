@@ -1,0 +1,23 @@
+.order_list_content{
+
+}
+.order_list_content_item{
+  border-bottom: 1px solid #dcdcdc;
+  color: #333;
+}
+.order_list_content_item_cell{
+  display: flex;
+  justify-content: space-between;
+  line-height: 50rpx;
+  padding: 10rpx 20rpx;
+}
+.order_list_content_order_num{
+  color: #666;
+}
+.order_list_content_order_price{
+  color: var(--themeColor);
+  font-size: 40rpx;
+}
+.order_list_content_order_date{
+  color: #000;
+}
