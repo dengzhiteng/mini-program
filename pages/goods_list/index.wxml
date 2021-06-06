@@ -1,0 +1,28 @@
+<view class="goodsList">
+  <search-input> </search-input>
+  <tabs tabs="{{tabs}}" currentIndex="{{currentIndex}}" bind:handleTapTab="handleTapTab">
+    <view class="content">
+      <!-- 综合 -->
+      <block wx:if="{{currentIndex==0}}">
+        <block wx:for="{{goodsList}}" wx:key="goods_small_logo" wx:if="{{item.goods_small_logo}}">
+          <navigator url="/pages/goods_detail/index?goods_id={{item.goods_id}}">
+            <view class="goods_item">
+              <view class="goods_images">
+                <image src="{{item.goods_small_logo}}" mode="widthFix"></image>
+              </view>
+              <view class="goods_info">
+                <view class="goods_name">{{item.goods_name}}</view>
+                <view class="goods_price">￥{{item.goods_price}}</view>
+              </view>
+            </view>
+          </navigator>
+        </block>
+      </block>
+      <!-- 销量 -->
+      <block wx:if="{{currentIndex==1}}">1</block>
+      <!-- 价格 -->
+      <block wx:if="{{currentIndex==2}}">2</block>
+    </view>
+    <view class="loading">{{pageNumTotal&&parames.pagenum>=pageNumTotal?'没数据了':'玩命加载中...'}}</view>
+  </tabs>
+</view>

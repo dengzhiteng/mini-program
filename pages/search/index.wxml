@@ -1,0 +1,20 @@
+<view class="goods_search">
+  <view class="goods_search_content">
+    <view class="key_words">
+      <view class="key_words_input">
+        <input auto-focus placeholder="请输入关键词进行搜索"  bindinput="handleInput" value="{{inpValue}}"/>
+      </view>
+      <view class="key_words_btn" hidden="{{!isFocus}}">
+        <button type="default" size="mini" bindtap="handCancel">取消</button>
+      </view>
+    </view>
+    <scroll-view class="goods_search_result" scroll-y="true">
+      <block wx:for="{{goods}}" wx:key="goods_id">
+        <navigator url="/pages/goods_detail/index?goods_id={{item.goods_id}}">
+          <view class="goods_search_result_item">{{item.goods_name}}</view>
+        </navigator>
+      </block>
+    </scroll-view>
+  </view>
+
+</view>

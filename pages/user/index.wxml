@@ -1,0 +1,71 @@
+<view class="user">
+  <view class="user_Info_image_warp">
+    <image class="user_info_image_bg" src="{{userInfo.avatarUrl}}">
+    </image>
+    <view class="user_info">
+      <block wx:if="{{userInfo.nickName}}">
+        <image class="user_info_image" src="{{userInfo.avatarUrl}}">
+        </image>
+        <view class="user_indo_nick_name">{{userInfo.nickName}}</view>
+      </block>
+      <block wx:else>
+        <navigator class='authBtn' url="/pages/auth/index">
+          <button type="default" plain>登录</button>
+        </navigator>
+      </block>
+    </view>
+  </view>
+  <view class="user_content">
+    <view class="my_order">
+      <view class="my_order_title">我的订单</view>
+      <view class="my_order_nav">
+        <navigator url="/pages/order/index?index=0&type=1" class="my_order_nav_item">
+          <view class="my_order_nav iconfont icon-dingdan"></view>
+          <text>全部订单</text>
+        </navigator>
+        <navigator url="/pages/order/index?index=1&type=2" class="my_order_nav_item">
+          <view class="my_order_nav iconfont icon-fukuantongzhi"></view>
+          <text>待付款</text>
+        </navigator>
+        <navigator url="/pages/order/index?index=2&type=3" class="my_order_nav_item">
+          <view class="my_order_nav iconfont icon-shouhuodizhi"></view>
+          <text>待收货</text>
+        </navigator>
+        <navigator url="/pages/order/index?index=3" class="my_order_nav_item">
+          <view class="my_order_nav iconfont icon-tuikuan"></view>
+          <text>退款/退货</text>
+        </navigator>
+      </view>
+    </view>
+    <view class="address_manage cell">
+      <text>收货地址管理</text>
+      <text class="iconfont icon-jiantou"></text>
+    </view>
+    <view class="cell" bindtap="handleMakePhoneCall">
+      <text>联系客服</text>
+      <text>1868215435</text>
+    </view>
+    <view class="cell onlineContact">
+      <text>在线客服</text>
+      <view class="online_contact_btn">
+        <text class="iconfont icon-jiantou"></text>
+        <button open-type="contact"></button>
+      </view>
+    </view>
+    <view class="cell" data-url="/pages/feedback/index" bindtap="handleNavigator">
+        <text>意见反馈</text>
+        <text class="iconfont icon-jiantou"></text>
+    </view>
+    <view class="cell" data-url="/pages/aboutUs/index" bindtap="handleNavigator">
+        <text>关于我们</text>
+        <text class="iconfont icon-jiantou"></text>
+    </view>
+    <view class="cell share">
+      <text>把应用推荐给其他人</text>
+      <view>
+        <text class="iconfont icon-jiantou"></text>
+       <button open-type="share"></button>
+      </view>
+    </view>
+  </view>
+</view>

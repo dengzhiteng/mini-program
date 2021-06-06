@@ -1,0 +1,39 @@
+<!--pages/index/index.wxml-->
+<view class="index">
+  <search-input></search-input>
+  <!-- 轮播 -->
+  <swiper class="swiper" indicator-dots autoplay interval="3000" circular>
+    <swiper-item wx:for="{{swiperData}}" wx:key="*this">
+      <navigator url="{{item.navigator_url}}">
+        <image src="{{item.image_src}}" mode="widthFix"></image>
+      </navigator>
+    </swiper-item>
+  </swiper>
+  <!-- 导航 -->
+  <view class="category">
+    <view class="category_item" wx:for="{{catitemsData}}" wx:key="*this">
+      <navigator url="{{item.navigator_url}}">
+        <image src="{{item.image_src}}" mode="widthFix"></image>
+      </navigator>
+    </view>
+  </view>
+  <!-- 楼层 -->
+  <view class="floor">
+    <view class="floor_item" wx:for="{{floorData}}" wx:key="*this">
+      <view class="floor_title">
+        <image src="{{item.floor_title.image_src}}" mode="widthFix"></image>
+      </view>
+      <view class="product_list">
+        <view class="left" bindtap="handleNavigator" data-url="{{item.product_list[0].navigator_url}}">
+              <image src="{{item.product_list[0].image_src}}" mode="widthFix" ></image>
+        </view>
+        <view class="right">
+          <view class="right_item" wx:for="{{item.product_list}}" wx:for-index="index1" wx:for-item="item1"
+            wx:if="{{index1!=0}}" wx:key="*this">
+              <image src="{{item1.image_src}}" mode="widthFix" bindtap="handleNavigator" data-url="{{item1.navigator_url}}"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
